@@ -24,6 +24,15 @@ def local_css():
             background-color: #ffffff;
             border-right: 1px solid #e2e8f0;
         }
+        /* Force sidebar text to be visible (Dark) */
+        [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+        [data-testid="stSidebar"] h1,
+        [data-testid="stSidebar"] h2,
+        [data-testid="stSidebar"] h3,
+        [data-testid="stSidebar"] span,
+        [data-testid="stSidebar"] label {
+            color: #1e293b !important;
+        }
         .main-header {
             color: #1e3a8a !important;
             font-size: 3.5rem;
