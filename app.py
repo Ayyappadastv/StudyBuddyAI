@@ -86,6 +86,25 @@ def local_css():
             margin-bottom: 0;
             line-height: 1.2;
         }
+        /* GLOBAL VISIBILITY FIXES for Ayyappadas TV */
+        /* 1. Make Tab labels clearly visible */
+        button[data-testid="stTab"] p {
+            color: #000000 !important;
+            font-weight: 600 !important;
+        }
+        /* 2. Fix faint Footer text in main area */
+        [data-testid="stMain"] [data-testid="stMarkdownContainer"] div, 
+        [data-testid="stMain"] [data-testid="stMarkdownContainer"] p {
+            color: #000000 !important;
+            font-size: 0.9rem !important;
+        }
+        /* 3. Fix Sidebar list and Alert visibility */
+        [data-testid="stSidebar"] [data-testid="stAlert"] li,
+        [data-testid="stSidebar"] [data-testid="stAlert"] p,
+        [data-testid="stMain"] [data-testid="stAlert"] p {
+            color: #000000 !important;
+            font-weight: 500 !important;
+        }
         .brand-text {
             color: #3b82f6;
             font-weight: 700;
