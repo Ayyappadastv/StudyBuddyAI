@@ -34,19 +34,19 @@ def local_css():
             color: #000000 !important;
             font-weight: 500;
         }
-        /* Fix File Uploader (Black Box) */
+        /* Fix File Uploader (White Box) */
         [data-testid="stFileUploadDropzone"] {
-            background-color: #f1f5f9 !important;
+            background-color: #ffffff !important;
             border: 2px dashed #94a3b8 !important;
-            color: #1e293b !important;
+            color: #000000 !important;
         }
         [data-testid="stFileUploadDropzone"] * {
-            color: #1e293b !important;
+            color: #000000 !important;
         }
         button[data-testid="baseButton-secondary"] {
-            background-color: #ffffff !important;
-            color: #1e293b !important;
-            border: 1px solid #cbd5e1 !important;
+            background-color: #f8fafc !important;
+            color: #000000 !important;
+            border: 1px solid #94a3b8 !important;
         }
         /* Hide Streamlit Navbar/Deploy Button */
         header {visibility: hidden;}
