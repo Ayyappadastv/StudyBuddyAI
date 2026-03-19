@@ -31,7 +31,20 @@ def local_css():
         [data-testid="stSidebar"] h3,
         [data-testid="stSidebar"] span,
         [data-testid="stSidebar"] label {
-            color: #1e293b !important;
+            color: #000000 !important;
+            font-weight: 500;
+        }
+        /* Hide Streamlit Navbar/Deploy Button */
+        header {visibility: hidden;}
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        .sidebar-footer {
+            color: #1e3a8a !important;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #e2e8f0;
         }
         .main-header {
             color: #1e3a8a !important;
@@ -94,9 +107,7 @@ with st.sidebar:
     st.divider()
     st.header("Getting Started")
     st.info("1. Upload audio\n2. Wait for AI\n3. Start learning!")
-    st.divider()
-    st.markdown("---")
-    st.markdown("Created with ❤️ by **Ayyappadas TV**")
+    # Sidebar footer moved to end for consistency
 
 if not audio_file:
     st.markdown("""
@@ -220,8 +231,8 @@ if audio_file:
             st.info("Not enough content for flashcards.")
 
 # No else block needed here as Welcome Card handles empty state
-st.sidebar.markdown("---")
-st.sidebar.markdown("Created by **Ayyappadas TV**")
+# Final Footer Branding
+st.sidebar.markdown("<div class='sidebar-footer'>Created with ❤️ by Ayyappadas TV</div>", unsafe_allow_html=True)
 
 st.markdown("---")
 st.markdown("<div style='text-align: center; color: #4b6584; font-size: 0.8rem;'>StudyBuddy AI - A project by <span class='brand-text'>Ayyappadas TV</span></div>", unsafe_allow_html=True)
