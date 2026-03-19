@@ -20,12 +20,17 @@ def local_css():
         .stApp {
             background-color: #f8fafc;
         }
+        [data-testid="stSidebar"] {
+            background-color: #ffffff;
+            border-right: 1px solid #e2e8f0;
+        }
         .main-header {
-            color: #1e3a8a;
+            color: #1e3a8a !important;
             font-size: 3.5rem;
             font-weight: 800;
             text-align: center;
             margin-bottom: 0;
+            line-height: 1.2;
         }
         .brand-text {
             color: #3b82f6;
