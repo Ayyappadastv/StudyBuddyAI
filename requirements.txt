@@ -1,0 +1,14 @@
+streamlit
+openai-whisper
+librosa
+soundfile
+langchain
+langchain-community
+faiss-cpu
+sentence-transformers
+transformers
+torch
+plotly
+pandas
+numpy
+python-dotenv
