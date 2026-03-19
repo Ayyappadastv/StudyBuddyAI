@@ -23,5 +23,5 @@ def summarize_chunks(chunks, model_name="facebook/bart-large-cnn"):
     summaries = []
     for chunk in chunks:
         if len(chunk.strip()) > 100: # Only summarize meaningful chunks
-            summaries.append(summarize_text(chunk, model_name))
+            summaries.append(summarize_text(chunk))
     return " ".join(summaries)
