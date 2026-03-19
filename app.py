@@ -34,6 +34,20 @@ def local_css():
             color: #000000 !important;
             font-weight: 500;
         }
+        /* Fix File Uploader (Black Box) */
+        [data-testid="stFileUploadDropzone"] {
+            background-color: #f1f5f9 !important;
+            border: 2px dashed #94a3b8 !important;
+            color: #1e293b !important;
+        }
+        [data-testid="stFileUploadDropzone"] * {
+            color: #1e293b !important;
+        }
+        button[data-testid="baseButton-secondary"] {
+            background-color: #ffffff !important;
+            color: #1e293b !important;
+            border: 1px solid #cbd5e1 !important;
+        }
         /* Hide Streamlit Navbar/Deploy Button */
         header {visibility: hidden;}
         #MainMenu {visibility: hidden;}
