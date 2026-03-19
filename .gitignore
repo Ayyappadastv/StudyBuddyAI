@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large Media
+temp_*.m4a
+temp_*.mp3
+temp_*.wav
+
+# Streamlit
+.streamlit/
+static/
+
+# Environment
+.env
+venv/
+env/
