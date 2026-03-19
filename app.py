@@ -5,9 +5,10 @@ import pandas as pd
 from utils.transcription import transcribe_audio
 from utils.processing import split_text, create_vector_store, save_vector_store, load_vector_store
 from utils.summarization import summarize_chunks
-from langchain.chains import RetrievalQA
 from langchain_community.llms import HuggingFaceHub
 from langchain_community.embeddings import HuggingFaceEmbeddings
+# RetrievalQA is replaced by a custom function below to avoid import errors on Cloud
+# Force Reboot Trigger: Final Sync
 
 # --- Page Config & Styling ---
 # --- Page Config ---
