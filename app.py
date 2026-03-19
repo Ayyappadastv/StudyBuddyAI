@@ -34,19 +34,37 @@ def local_css():
             color: #000000 !important;
             font-weight: 500;
         }
-        /* Fix File Uploader (White Box) */
-        [data-testid="stFileUploadDropzone"] {
-            background-color: #ffffff !important;
+        /* Fix File Uploader (Light Grey with Hover) */
+        [data-testid="stFileUploaderDropzone"] {
+            background-color: #f1f5f9 !important;
             border: 2px dashed #94a3b8 !important;
             color: #000000 !important;
+            transition: all 0.3s ease !important;
         }
-        [data-testid="stFileUploadDropzone"] * {
+        [data-testid="stFileUploaderDropzone"]:hover {
+            background-color: #ffffff !important;
+            border: 2px solid #3b82f6 !important;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1) !important;
+        }
+        [data-testid="stFileUploaderDropzone"] * {
             color: #000000 !important;
         }
-        button[data-testid="baseButton-secondary"] {
-            background-color: #f8fafc !important;
+        [data-testid="stFileUploaderDropzoneInstructions"] div, 
+        [data-testid="stFileUploaderDropzoneInstructions"] span,
+        [data-testid="stWidgetLabel"] p {
+            color: #000000 !important;
+            font-weight: 600 !important;
+        }
+        [data-testid="stFileUploader"] button {
+            background-color: #ffffff !important;
             color: #000000 !important;
             border: 1px solid #94a3b8 !important;
+            transition: all 0.2s ease !important;
+        }
+        [data-testid="stFileUploader"] button:hover {
+            background-color: #3b82f6 !important;
+            color: #ffffff !important;
+            border: 1px solid #3b82f6 !important;
         }
         /* Hide Streamlit Navbar/Deploy Button */
         header {visibility: hidden;}
